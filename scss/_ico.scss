@@ -1,0 +1,15 @@
+/* icon, button 정의 */
+.btn{
+    &-letter{
+        @include ico('ico_letter_content2.svg', rem(20), rem(16))
+    }
+}
+
+.ico{
+    &-notice{
+        @include ico('ico_notice.svg', rem(20), rem(20))
+    }
+    &-views{
+        @include ico('ico_views.svg', rem(14), rem(10))
+    }
+}

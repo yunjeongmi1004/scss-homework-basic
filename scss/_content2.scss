@@ -1,0 +1,15 @@
+/* Content2 */
+.flexbox{display:flex}
+
+.board-list {
+    &:not(:first-child) {@include border(top, rem(1), solid, $lightgrey);}
+    &__text1{
+        @include text($grey3, rem(14), 700, rem(20), rem(-.5));
+        @include ellipsis(1);
+
+    }
+    &__text2{
+        @include text($grey9, rem(14), null, rem(22), rem(-.5))
+    }
+    .flexbox{align-items:center;gap:0 rem(12)}
+}

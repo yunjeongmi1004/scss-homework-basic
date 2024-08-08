@@ -1,0 +1,14 @@
+//여백 전용 scss
+
+$mt:4,10,20,30;
+
+@each $item in $mt {
+    .mt#{$item}{
+        margin-top:rem($item);
+    }
+
+    .pd#{$item}{
+        padding-block:rem($item)
+    }
+}
+
